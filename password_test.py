@@ -14,3 +14,9 @@ class TestPassword(unittest.TestCase):
             '''
             test_init test case to test if the object is initialized properly
             '''
+            self.assertEqual(self.new_password.first_name,"James")
+            self.assertEqual(self.new_contact.last_name,"Muriuki")
+            self.assertEqual(self.new_contact.phone_number,"0712345678")
+            self.assertEqual(self.new_contact.email,"james@ms.com")
+
+
