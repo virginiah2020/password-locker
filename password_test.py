@@ -8,6 +8,9 @@ class TestPassword(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_password = password("virginiah2020","wamuyu")
+        self.new_password = password("virginiah2020","virgy@gmail","wamuyu")
 
          def test_init(self):
+            '''
+            test_init test case to test if the object is initialized properly
+            '''
