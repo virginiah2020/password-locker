@@ -26,5 +26,24 @@ class Credentials:
         delete credentials 
         '''
         Credentials.credential_list.remove(self)    
+        #search
+     @classmethod
+     def find_account(cls, account):
+        '''
+        search for accounts
+        '''
+        for credential in cls.credential_list:
+            if credential.account == account:
+                return credential  
+
+      @classmethod
+      def credential_exists(cls, account):
+        '''
+        confirm a class actually exists
+        '''
+        for credential in cls.credential_list:
+            if credential.account == account:
+                return True
+        return False          
 
 

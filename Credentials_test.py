@@ -23,3 +23,20 @@ class TestCredentials(unittest.TestCase)
         self.assertEqual(self.new_credential.account, "GitHub")
         self.assertEqual(self.new_credential.email, "vancyvy254@gmail.com")
         self.assertEqual(self.new_credential.passlock, "111222")
+
+        #save
+     def test_save_credentials(self):
+        '''
+        check if credentials can be saved
+        '''  
+        self.new_credential.save_credential()
+        self.assertEqual(len(Credentials.credential_list),1)
+
+     def test_saving_multiple_creds(self):
+        '''
+        check if users can store multiple credentials
+        '''
+        self.new_credential.save_credential()
+        test_credential = Credentials("Facebook", "testuser","password")
+        test_credential.save_credential()
+        self.assertEqual(len(Credentials.credential_list),2)
