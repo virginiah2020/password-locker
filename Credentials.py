@@ -20,3 +20,11 @@ class Credentials:
         '''
         Credentials.credential_list.append(self)
 
+        #delete
+     def delete_credential(self):
+        '''
+        delete credentials 
+        '''
+        Credentials.credential_list.remove(self)    
+
+
