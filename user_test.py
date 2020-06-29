@@ -1,8 +1,5 @@
 import unittest
-from user import User
-class TestUser(unittest.TestCase):
-
-
+from User import User
 class TestUser(unittest.TestCase):
 
      def setUp(self):
@@ -60,13 +57,6 @@ class TestUser(unittest.TestCase):
         test_user.save_user()
         found_user = User.find_user("virginiah2020")
         self.assertEqual(found_user.username, self.new_user.username)
-
-        def test_display_all_contacts(self):
-        '''
-        method that returns a list of all contacts saved
-        '''
-
-        self.assertEqual(Contact.display_contacts(),Contact.contact_list)
 
 
      if __name__ == '__main__':
