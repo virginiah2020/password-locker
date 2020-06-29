@@ -1,9 +1,9 @@
-class Password:
+class User:
     """
-    Password that generates new instances of passwords.
+    Class that generates new instances of user.
     """
 
-    Password_locker = [] # Empty contact list
+    User_list = [] # Empty contact list
 
     def __init__(self,username,email,password):
 
