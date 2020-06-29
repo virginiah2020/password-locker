@@ -9,7 +9,7 @@ class Credentials:
 
     def __init__(self, username , email , passlock):
     
-        self.username = username
+        self.account = account
         self.email = email
         self.passlock = passlock
 
