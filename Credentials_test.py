@@ -15,7 +15,7 @@ class TestCredentials(unittest.TestCase)
         '''
         Credentials.cred_list = []
 
-
+      #intiailizing
      def test_init(self):
         '''
         check if instances initialize as expected
