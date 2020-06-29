@@ -22,6 +22,11 @@ class TestPassword(unittest.TestCase):
             '''
             test_save_multiple_password to check if we can save multiple password
             objects to our password_list
+            '''
+            self.new_contact.save_contact()
+            test_contact = Contact("Test","user","0712345678","test@user.com") # new contact
+            test_contact.save_contact()
+            self.assertEqual(len(Contact.contact_list),2)
 
     if __name__ == '__main__':
     unittest.main()
