@@ -44,6 +44,11 @@ class Credentials:
         for credential in cls.credential_list:
             if credential.account == account:
                 return True
-        return False          
+        return False 
+
+      @classmethod
+      def copy_passlock(cls, passlock):
+            find_account = Credentials.find_account(passlock)
+            pyperclip.copy(find_account.passlock)         
 
 
