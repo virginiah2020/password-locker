@@ -18,6 +18,11 @@ class TestPassword(unittest.TestCase):
             self.assertEqual(self.new_password.email,"virgy@gmail")
             self.assertEqual(self.new)new_password.password,"wamuyu")
 
+         def test_save_multiple_passwords(self):
+            '''
+            test_save_multiple_password to check if we can save multiple password
+            objects to our password_list
+
     if __name__ == '__main__':
     unittest.main()
 
