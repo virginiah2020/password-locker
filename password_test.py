@@ -39,6 +39,14 @@ class TestPassword(unittest.TestCase):
             self.new_password.delete_password()# Deleting a contact object
             self.assertEqual(len(Password.password_list),1)
 
+     def delete_password(self):
+
+        '''
+        delete_password method deletes a saved password from the password_list
+        '''
+
+        Password.password_list.remove(self)
+
      if __name__ == '__main__':
      unittest.main()
 
