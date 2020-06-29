@@ -13,3 +13,10 @@ class Credentials:
         self.email = email
         self.passlock = passlock
 
+        #save
+    def save_credential(self):
+        '''
+        self credentials in credential_list
+        '''
+        Credentials.credential_list.append(self)
+
