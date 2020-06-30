@@ -96,24 +96,28 @@ def main():
 
       elif short_code == 'dc':
 
-        if display_user():
-            print("Here is a list of all your contacts")
-            print('\n')
+            if display_user():
+               print("Here is a list of all your contacts")
+               print('\n')
 
-            for user in display_user():
-                 print(f"{user.username} {user.email} .....{user.password}")
+               for user in display_user():
+                    print(f"{user.username} {user.email} .....{user.password}")
 
-                 print('\n')
-        else:
+                    print('\n')
+           else:
                 print('\n')
                 print("You dont seem to have any account saved yet")
                 print('\n')
 
-      else:
+            else:
                 print("That contact does not exist")
 
-       elif short_code == "ex":
+    elif short_code == "ex":
         print("Bye .......")
         break
-       else:
+     else:
         print("I really didn't get that. Please use the short codes")
+
+    if __name__ == '__main__':
+
+    main()
